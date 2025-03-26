@@ -40,13 +40,10 @@ Ich habe das Docker-Image mit folgendem Befehl erstellt:
 docker build -t my-apache-image .
 ```
 
-- `-t my-apache-image` gibt dem Image einen Namen.
-- `.` bedeutet, dass das `Dockerfile` im aktuellen Verzeichnis verwendet wird.
-
 Das Image kann mit folgendem Befehl angezeigt werden:
 
 ```bash
-docker images
+docker ps -a
 ```
 
 ## Container starten
@@ -56,19 +53,11 @@ Um den Container mit Port 8080 und den Bind-Mounts zu starten, habe ich folgende
 ```bash
 docker run -d \
   -p 8080:80 \
-  -v $(pwd)/html:/usr/local/apache2/htdocs \
-  -v $(pwd)/logs:/usr/local/apache2/logs \
+  -v /home/marcb/my-apache-webserver/html:/usr/local/apache2/htdocs \
+  -v /home/marcb/my-apache-webserver/logs:/usr/local/apache2/logs \
   --name my-apache-container \
   my-apache-image
 ```
-
-### Parameter-Erklärung:
-- `-d` lässt den Container im Hintergrund laufen.
-- `-p 8080:80` macht den Container über `http://localhost:8080` erreichbar.
-- `-v $(pwd)/html:/usr/local/apache2/htdocs` bindet das `html/`-Verzeichnis ein, sodass Änderungen sofort sichtbar sind.
-- `-v $(pwd)/logs:/usr/local/apache2/logs` speichert die Logs direkt auf dem Host.
-- `--name my-apache-container` gibt dem Container einen Namen.
-- `my-apache-image` ist das Image, das zuvor gebaut wurde.
 
 ## Webseite testen
 
