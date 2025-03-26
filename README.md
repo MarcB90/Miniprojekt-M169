@@ -22,7 +22,7 @@ my-apache-docker/
 
 Die Datei `html/index.html` enthält eine einfache Beispiel-Webseite, welches ich mit hilfe von Chat-GPT erstellt habe:
 
-[Link zur index.html](html/index.html)
+[Link zur index.html](index.html)
 
 
 ## Dockerfile
