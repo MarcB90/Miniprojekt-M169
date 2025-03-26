@@ -78,4 +78,4 @@ Die Apache-Logs finde ich in meinem `logs/`-Ordner auf dem Host-System. Besonder
 - `error_log` → Zeigt Fehler an, falls welche auftreten.
 
   So sollte es zumindest sein, jedoch sehe ich in diesem Ordner lediglich eine Datei mit dem Namen httpd.pid.
-  Öffne ich diese, wird mir lediglich ein 1 angezeigt.  
+  Öffne ich diese, wird mir lediglich eine 1 angezeigt.  
