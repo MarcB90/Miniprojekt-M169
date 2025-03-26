@@ -29,7 +29,7 @@ Die Datei `html/index.html` enthält eine einfache Beispiel-Webseite, welches ic
 
 Ich habe folgendes `Dockerfile` erstellt:
 
-[Link zum Dockerfile](Dockerfile)
+[Link zum Dockerfile](dockerfile)
 
 
 ## Docker-Image bauen
@@ -66,7 +66,7 @@ Ich kann meine Webseite über folgenden Link aufrufen:
 ```
 http://localhost:8080/
 ```
-
+[Link zum Webseitenbild](image)
 Falls ich Änderungen an `index.html` vornehme, werden sie sofort sichtbar, da das Verzeichnis als Bind-Mount eingebunden ist.
 
 ## Logs überprüfen
