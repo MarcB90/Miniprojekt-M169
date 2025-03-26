@@ -66,7 +66,8 @@ Ich kann meine Webseite über folgenden Link aufrufen:
 ```
 http://localhost:8080/
 ```
-[Link zum Webseitenbild](image)
+[Link zum Webseitenbild](image.png)
+
 Falls ich Änderungen an `index.html` vornehme, werden sie sofort sichtbar, da das Verzeichnis als Bind-Mount eingebunden ist.
 
 ## Logs überprüfen
